@@ -9,6 +9,7 @@ import logo from "../Assets/SmartCard_Light.png"
 import { AiFillFileText } from 'react-icons/ai';
 import { FiAnchor, FiPhoneCall } from 'react-icons/fi';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+import MobileMenu from './MobileMenu';
 
 
 
@@ -71,6 +72,9 @@ const Main = () => {
                             <div className={`bar ${showMenu ? 'active' : ''}`} />
                             <div className={`bar ${showMenu ? 'active' : ''}`} />
                             <div className={`bar ${showMenu ? 'active' : ''}`} />
+                        </div>
+                        <div>
+                            {showMenu && <MobileMenu/>}
                         </div>
                         <ul className={`nav-menu ${showMenu ? 'active' : ''}`}>
                             <span className='logo-container'> <img src={logo} width={150} className='logo-content' alt='logo' /> </span>
