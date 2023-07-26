@@ -1,0 +1,58 @@
+.login-container,
+.register-container {
+  text-align: center;
+}
+
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form input,
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-form button,
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+.app-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs-container a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs-container a.active {
+  border-bottom: 2px solid #333;
+}
+
+@media (max-width: 480px) {
+  .tabs-container {
+    flex-direction: column;
+  }
+}
