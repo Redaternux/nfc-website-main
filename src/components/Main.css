@@ -551,4 +551,26 @@ li:hover{
         width: 90%;
     }
 
+    .contact-form input,
+    .contact-form textarea {
+        width: 90%;
+    }
+
+    .contact-button {
+        width: 90%;
+    }
+
+    .infos-contact {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .flex-contact-fields {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex-contact{
+        display: block;
+    }
+
 }
