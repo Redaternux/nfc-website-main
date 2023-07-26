@@ -1,15 +1,18 @@
 import Main from "./components/Main";
 import AuthenticationPage from "./Auth/AuthenticationPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Login from "./Auth/Login";
+import Register from "./Auth/Register";
+
 
 function App() {
   return (
-    <BrowserRouter>
       <Routes>
         <Route element={<Main/>} path="/" />
         <Route element={<AuthenticationPage/>} path="/auth" />
+        <Route path="/Login" component={<Login/>} />
+        <Route path="/register" component={<Register/>} />
       </Routes>
-    </BrowserRouter>
   );
 }
 

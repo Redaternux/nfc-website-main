@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import Login from './Login';
 import Register from './Register';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+
 
 const AuthenticationPage = () => {
-  const [activeTab, setActiveTab] = useState('login');
+    const [activeTab, setActiveTab] = useState('login');
 
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
+    return (
+        <div className="app-container">
+          <div className="tabs-container">
+            <Link to="/Login" className={activeTab === 'login' ? 'active' : ''} onClick={() => setActiveTab('login')}>
+              Login
+            </Link>
+            <Link to="/register" className={activeTab === 'register' ? 'active' : ''} onClick={() => setActiveTab('register')}>
+              Register
+            </Link>
+          </div>
+        </div>
+    );
   };
-
-  return (
-    <div>
-      {/* Tab buttons for Login and Register */}
-      <button onClick={() => handleTabChange('login')}>Login</button>
-      <button onClick={() => handleTabChange('register')}>Register</button>
-
-      {activeTab === 'login' ? <Login /> : <Register />}
-    </div>
-  );
-};
-
 export default AuthenticationPage;

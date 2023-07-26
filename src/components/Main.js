@@ -10,12 +10,19 @@ import { AiFillFileText } from 'react-icons/ai';
 import { FiAnchor, FiPhoneCall } from 'react-icons/fi';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 import MobileMenu from './MobileMenu';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Main = () => {
 
     const [showIcon, setShowIcon] = useState(false);
+
+    const navigate = useNavigate();
+
+    const navigateToAccount = () => {
+        navigate("/auth")
+    }
 
     const handleScrollToTop = () => {
         window.scrollTo({
@@ -93,7 +100,7 @@ const Main = () => {
                             <li>
                                 <Link to="sixth-div" smooth={true} duration={600}>Contact</Link>
                             </li> 
-                            <button className='inscription-section'>
+                            <button onClick={navigateToAccount} className='inscription-section'>
                                 S'identifier  
                             </button>
                         </ul>
