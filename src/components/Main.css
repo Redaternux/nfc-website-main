@@ -101,51 +101,6 @@ li:hover{
     margin: 6px 0;
   }
 
-  @media screen and (max-width: 768px) {
-    .nav-menu {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  
-    .nav-menu.active {
-      display: flex;
-    }
-
-    ul{
-        background-color: #E9E4ED;
-        height: 100%;
-        display: block;
-    }
-  }
-
-
-/* @keyframes changeText {
-    0% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    25% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    50% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    75% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  } */
-
-
 .inscription-section{
     background: none;
     color: black;
@@ -539,3 +494,42 @@ li:hover{
     color: #391f5a;
 }
 
+
+
+
+/* -------------------------------------------------------        Adjust for media screen         -------------------------------------------------- */
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+
+    ul{
+        background-color: #E9E4ED;
+        height: 100%;
+        display: block;
+    }
+
+    .image-container{
+        display: none;
+    }
+
+    .icons-container{
+        display: none;
+    }
+
+    .first-section-top{
+        text-align: center;
+        width: 80%;
+    }
+  }
