@@ -326,7 +326,7 @@ li:hover{
     margin-top: 50px;
 }
 
-.templates-first-line{
+.templates-line{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
     display: grid;
@@ -335,7 +335,7 @@ li:hover{
     transition: 0.3s;
 }
 
-.templates-second-line{
+.templates-line{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
     display: grid;
@@ -536,6 +536,10 @@ li:hover{
     .columns-container{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
+    }
+
+    .templates-line {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }

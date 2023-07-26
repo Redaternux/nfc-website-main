@@ -207,13 +207,13 @@ const Main = () => {
                     </p>
                 </div>
                 <div className='templates-container'>
-                    <div className='templates-first-line'>
+                    <div className='templates-line'>
                         <img src={nfcImage} width={300} />
                         <img src={nfcImage} width={300} />
                         <img src={nfcImage} width={300} />
                         <img src={nfcImage} width={300} />
                     </div>
-                    <div className='templates-second-line'>
+                    <div className='templates-line'>
                         <img src={nfcImage} width={300} />
                         <img src={nfcImage} width={300} />
                         <img src={nfcImage} width={300} />
