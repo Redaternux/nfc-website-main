@@ -18,11 +18,11 @@ ul{
     justify-content: center;
     align-items: center;
     background-color: #E9E4ED;
-    height: 12vh; 
+    height: 12vh;
+   
     top: 0;
     box-shadow: 0px 7px 31px 0px rgba(0,0,0,0.67);
 }
-
 
 li{
     margin-left: 50px;
@@ -50,17 +50,17 @@ li:hover{
 
 .second-div{
     background-color: rgb(255, 255, 255);
-    height: 120%;
+    height: 100%;
 }
 
 .third-div{
     background-color: aliceblue;
-    height: 120%;
+    height: 100%;
 }
 
 .fourth-div{
     background-color: rgb(255, 255, 255);
-    height: 120%;
+    height: 100%;
 }
 
 .fifth-div{
@@ -86,7 +86,6 @@ li:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
 }
 
 
@@ -196,7 +195,7 @@ li:hover{
 
 .image-container{
     margin-left: 150px;
-    margin-right: 20px;
+    margin-right: 100px;
     transition: 0.3s;
 }
 
@@ -210,6 +209,7 @@ li:hover{
 
 .text-image-flex{
     display: flex;
+    margin-top: 20px;
 }
 
 .start-button{
@@ -251,6 +251,7 @@ li:hover{
 }
 
 .second-div-paragraph{
+
     color: #8B5FBF;
     font-size: 20px;
     margin-bottom: 20px;
@@ -280,11 +281,10 @@ li:hover{
 
 .column-1{
     padding: 10px;
-    width: 80%;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
     transition: 0.3s;
-    margin-bottom: 40px;
 }
 
 .column-1 p{
@@ -319,29 +319,6 @@ li:hover{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
 }
-
-
-@media (max-width: 767px) {
-    .columns-container {
-      grid-template-columns: 1fr;
-      grid-gap: 20px;
-    }
-  
-    .column-1 {
-      width: 80%;
-    }
-
-    .templates-first-line,
-    .templates-second-line {
-    grid-template-columns: unset;
-    grid-gap: 20px;
-    width: 80%;
-  }
-}
-
-
-
-
 
 .arrow-to-top{
     position: fixed;
@@ -396,30 +373,20 @@ li:hover{
 
 .templates-first-line{
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 50px;
     display: grid;
-    padding: 5px;
+    padding: 10px;
     margin: 0 auto;
     transition: 0.3s;
 }
-
 
 .templates-second-line{
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 50px;
     display: grid;
-    padding: 5px;
+    padding: 10px;
     margin: 0 auto;
     transition: 0.3s;
-    margin-bottom: 40px;
-}
-
-.templates-second-line img{
-    border-radius: 20px;
-}
-
-.templates-first-line img{
-    border-radius: 20px;
 }
 
 .fourth-div-content{
@@ -459,11 +426,11 @@ li:hover{
 
 .plan{
     padding: 10px;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     text-align: center;
     transition: 0.3s;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .plan h1, h2, p{
@@ -483,6 +450,7 @@ li:hover{
 .center{
     background-color: #8B5FBF;
     color: #FFFFFF;
+    border-radius: 10px;
 }
 
 
@@ -570,3 +538,4 @@ li:hover{
     text-decoration: none;
     color: #391f5a;
 }
+

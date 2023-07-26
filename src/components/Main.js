@@ -220,7 +220,7 @@ const Main = () => {
                         <img src={nfcImage} width={300} />
                     </div>
                 </div>
-            </div>
+            </div> 
             <div className='fourth-div' id='fourth-div'>
                 <div className='fourth-div-content'>
                     <p className='fourth-div-paragraph'> Digitalisez votre networking </p>
@@ -318,9 +318,6 @@ const Main = () => {
                                 <button className='contact-button' type="submit"> Envoyer </button>
                             </form>
                         </div>
-                    </div>
-                    <div>
-                        
                     </div>
                     <div className='infos-contact'>
                         <h1 className='contact-h1'> Notre emplacement </h1>
