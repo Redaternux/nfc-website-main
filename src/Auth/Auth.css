@@ -12,19 +12,20 @@
 
 .login-form input,
 .register-form input {
-  width: 100%;
+  width: 30%;
   padding: 10px;
   margin: 10px 0;
 }
 
 .login-form button,
 .register-form button {
-  width: 100%;
+  width: 32%;
   padding: 10px;
   background-color: #333;
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 

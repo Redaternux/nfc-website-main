@@ -21,7 +21,7 @@ const Main = () => {
     const navigate = useNavigate();
 
     const navigateToAccount = () => {
-        navigate("/auth")
+        navigate("/register") 
     }
 
     const handleScrollToTop = () => {

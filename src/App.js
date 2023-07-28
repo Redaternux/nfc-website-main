@@ -8,10 +8,10 @@ import Register from "./Auth/Register";
 function App() {
   return (
       <Routes>
-        <Route element={<Main/>} path="/" />
-        <Route element={<AuthenticationPage/>} path="/auth" />
-        <Route path="/Login" component={<Login/>} />
-        <Route path="/register" component={<Register/>} />
+        <Route path="/" element={<Main/>} />
+        <Route path="/auth" element={<AuthenticationPage/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/register" element={<Register/>} />
       </Routes>
   );
 }

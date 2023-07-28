@@ -320,29 +320,26 @@ li:hover{
 
 .templates-container{
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 50px;
 }
 
 .templates-line{
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
+    grid-gap: 1%;
     display: grid;
     padding: 10px;
     margin: 0 auto;
     transition: 0.3s;
 }
 
-.templates-line{
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
-    display: grid;
-    padding: 10px;
+.templates-line img{
     margin: 0 auto;
-    transition: 0.3s;
+    width: 80%;
+    border-radius: 10px;
 }
+
 
 .fourth-div-content{
     padding-top: 60px;
