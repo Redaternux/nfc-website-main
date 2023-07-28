@@ -547,6 +547,7 @@ li:hover{
 
     .templates-line {
         grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 40px;
     }
 
     .plans-fourth-div{
@@ -564,7 +565,8 @@ li:hover{
     }
 
     .contact-button {
-        width: 90%;
+        width: 80%;
+        margin-bottom: 50px;
     }
 
     .infos-contact {
@@ -573,11 +575,14 @@ li:hover{
     }
 
     .flex-contact-fields {
-        display: flex;
         flex-wrap: wrap;
     }
     .flex-contact{
         display: block;
+    }
+
+    .arrow-top{
+        display: none;
     }
 
 }
