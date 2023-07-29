@@ -4,17 +4,24 @@ import "./Main.css"
 import { Link } from 'react-scroll';
 import { useState, useEffect } from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaShare, FaQrcode, FaGlobe, FaArrowAltCircleUp, FaTelegramPlane } from "react-icons/fa"
-import nfcImage from "../Assets/nfc_detector.jpg"
 import logo from "../Assets/SmartCard_Light.png"
 import { AiFillFileText } from 'react-icons/ai';
 import { FiAnchor, FiPhoneCall } from 'react-icons/fi';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import MobileMenu from './MobileMenu';
 import { useNavigate } from 'react-router-dom';
+import ImageComponent from './ImageComponent';
+import first_theme_image from "../Assets/first-theme-smartcard.png"
+import nfcImage from "../Assets/nfc_detector.jpg"
+
 
 
 
 const Main = () => {
+
+
+    const getCurrentYear = () => new Date().getFullYear();
+    const currentYear = getCurrentYear();
 
     const [showIcon, setShowIcon] = useState(false);
 
@@ -52,8 +59,13 @@ const Main = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     const toggleMenu = () => {
-      setShowMenu(!showMenu);
+      setShowMenu(true);
+    //   document.body.style.overflow = 'hidden';
     };
+
+    const closeToggleMenu = () => {
+        setShowMenu(false)
+    }
     
     const [text, setText] = useState('Smart.');
     useEffect(() => {
@@ -72,6 +84,7 @@ const Main = () => {
   return (
     <div className='container-website'>
         <div className='content-website'>
+                    <span className='logo-container-mobile'> <img src={logo} width={150} alt='logomob' /> </span>
             <div className='first-div' id='first-div'>
                 <div>
                     <nav>
@@ -81,29 +94,31 @@ const Main = () => {
                             <div className={`bar ${showMenu ? 'active' : ''}`} />
                         </div>
                         <div>
-                            {showMenu && <MobileMenu/>}
+                            {showMenu && <MobileMenu closeToggleMenu={closeToggleMenu} />}
                         </div>
-                        <ul className={`nav-menu ${showMenu ? 'active' : ''}`}>
-                            <span className='logo-container'> <img src={logo} width={150} className='logo-content' alt='logo' /> </span>
-                            <li>
-                                <Link to="first-div" smooth={true} duration={600}>Accueil</Link>
-                            </li>
-                            <li>
-                                <Link to="second-div" smooth={true} duration={600}>Sur</Link>
-                            </li>
-                            <li>
-                                <Link to="third-div" smooth={true} duration={600}>Portfolio</Link>
-                            </li>
-                            <li>
-                                <Link to="fourth-div" smooth={true} duration={600}>Tarification</Link>
-                            </li>
-                            <li>
-                                <Link to="sixth-div" smooth={true} duration={600}>Contact</Link>
-                            </li> 
-                            <button onClick={navigateToAccount} className='inscription-section'>
-                                S'identifier  
-                            </button>
-                        </ul>
+                        <div className='web-navbar'>
+                            <ul className={`nav-menu ${showMenu ? 'active' : ''}`}>
+                                <span className='logo-container'> <img src={logo} width={150} className='logo-content' alt='logo' /> </span>
+                                <li>
+                                    <Link to="first-div" smooth={true} duration={600}>Accueil</Link>
+                                </li>
+                                <li>
+                                    <Link to="second-div" smooth={true} duration={600}>Sur</Link>
+                                </li>
+                                <li>
+                                    <Link to="third-div" smooth={true} duration={600}>Portfolio</Link>
+                                </li>
+                                <li>
+                                    <Link to="fourth-div" smooth={true} duration={600}>Tarification</Link>
+                                </li>
+                                <li>
+                                    <Link to="sixth-div" smooth={true} duration={600}>Contact</Link>
+                                </li> 
+                                <button onClick={navigateToAccount} className='inscription-section'>
+                                    S'identifier  
+                                </button>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
                 <div className='content-of-first'>
@@ -219,16 +234,16 @@ const Main = () => {
                 </div>
                 <div className='templates-container'>
                     <div className='templates-line'>
-                        <img src={nfcImage} width={300} />
-                        <img src={nfcImage} width={300} />
-                        <img src={nfcImage} width={300} />
-                        <img src={nfcImage} width={300} />
+                        <ImageComponent src={first_theme_image} />
+                        <ImageComponent src={first_theme_image} />
+                        <ImageComponent src={first_theme_image} />
+                        <ImageComponent src={first_theme_image} />
                     </div>
                     <div className='templates-line'>
-                        <img src={nfcImage} width={300} />
-                        <img src={nfcImage} width={300} />
-                        <img src={nfcImage} width={300} />
-                        <img src={nfcImage} width={300} />
+                        <ImageComponent src={first_theme_image} />
+                        <ImageComponent src={first_theme_image} />
+                        <ImageComponent src={first_theme_image} />
+                        <ImageComponent src={first_theme_image} />
                     </div>
                 </div>
             </div> 
@@ -362,7 +377,14 @@ const Main = () => {
                 </div>
             </div>
             <div className='footer'>
-                
+                <div className='icons-footer-container'>
+                    <FaInstagram className='icon' size={30}/>
+                    <FaFacebook className='icon' size={30}/>
+                    <FaLinkedin className='icon' size={30}/>
+                </div>
+                <div className='texts-footer-container'>
+                    <p> &copy; {currentYear} SmartCard Maroc </p>
+                </div>
             </div>
         </div>
     </div>

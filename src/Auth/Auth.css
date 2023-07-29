@@ -1,59 +1,96 @@
-.login-container,
-.register-container {
-  text-align: center;
-}
-
-.login-form,
-.register-form {
+.login-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f1f1f1;
 }
 
-.login-form input,
-.register-form input {
-  width: 30%;
-  padding: 10px;
-  margin: 10px 0;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
 }
 
-.login-form button,
-.register-form button {
-  width: 32%;
-  padding: 10px;
-  background-color: #333;
+.login-form-group {
+  margin-bottom: 15px;
+}
+
+
+.login-label {
+  padding: 8px;
+  width: 100%;
+  font-weight: bold;
+}
+
+
+.login-input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #9A73B5;
   color: #fff;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
-  border-radius: 20px;
+  font-size: 16px;
+  transition: 0.2s;
 }
 
-
-.app-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
+.login-button:hover{
+  background-color: #ac8ac4;
 }
 
-.tabs-container {
-  display: flex;
-  justify-content: space-around;
+.login-forgot-password,
+.login-no-account {
+  margin-top: 10px;
+}
+
+.login-forgot-password a{
+  color: #9A73B5;
+  text-decoration: none;
+}
+
+.login-forgot-password a:hover{
+  text-decoration: underline;
+}
+
+.login-no-account a{
+  color: #9A73B5;
+  text-decoration: none;
+}
+
+.login-no-account a:hover{
+  text-decoration: underline;
+}
+
+.login-logo{
   margin-bottom: 20px;
 }
 
-.tabs-container a {
-  text-decoration: none;
-  color: #333;
-  padding: 10px;
-  border-bottom: 2px solid transparent;
+.login-form h1{
+  margin-bottom: 20px;
 }
 
-.tabs-container a.active {
-  border-bottom: 2px solid #333;
-}
 
-@media (max-width: 480px) {
-  .tabs-container {
-    flex-direction: column;
-  }
+.error-login-message{
+  color: red;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }
