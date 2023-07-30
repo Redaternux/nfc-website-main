@@ -2,6 +2,8 @@ import React from 'react'
 import './Auth.css'
 import loginLogo from "../Assets/SmartCard_Light.png"
 import { useState } from 'react'
+import { FaBackward } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 
@@ -43,7 +45,10 @@ const Login = () => {
         <a href="#">Mot de passe oublié?</a>
       </div>
       <div className="login-no-account">
-        Nouveau ici? <a href="#"> Créer un compte </a>
+        Nouveau ici? <a href="/register"> Créer un compte </a>
+      </div>
+      <div className='back-to-home'>
+        <p> <Link to="/" style={{textDecorationLine:'none', color:'black',}}>  <span> <FaBackward/> </span> Revenir à la page d'accueil </Link> </p>
       </div>
     </div>
   )

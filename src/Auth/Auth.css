@@ -94,3 +94,12 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
 }
+
+.back-to-home p{
+  margin-top: 30px;
+}
+
+.back-to-home{
+  display: flex;
+  align-items: center;
+}
